@@ -1,0 +1,88 @@
+.pic1 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    margin-left:130px;
+    margin-top:100px;
+}
+
+img{
+    border-radius:15px;
+}
+
+
+.pic1:hover,.pic2:hover,.pic3:hover,.pic4:hover{
+    transform:scale(1.1);
+}
+
+.pic2 {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    margin-left:135px;
+    margin-top:140px;
+}
+
+.pic3 {
+    position: absolute;
+    top: 170px;
+    right: 300px;
+    margin-right:170px;
+    margin-top:70px;
+
+}
+
+.pic4 {
+    border-radius: 20%;
+    position: absolute;
+    top: 400px;
+    right: 300px;
+    margin-right:170px;
+    margin-top:170px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav {
+    background-color: #333;
+    padding: 0px;
+    padding-left: 500px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  nav a {
+    margin: 0px;
+    color:white;
+    padding-left: 15%;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease; 
+  }
+  nav a:hover {
+    transform: scale(1.1); 
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+  }
+  .logo {
+    margin: 0%;
+    padding-left: 5px;
+    height: 60px;
+    width: 130px;
+  }
+  

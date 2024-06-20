@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 5%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 25px;
+        }
+
+        .logo {
+            margin: 0%;
+            padding left: 5px;
+            height: 60px;
+            width: 130px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 0px;
+            padding-left: 500px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0px;
+            color: white;
+            padding-left: 15%;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            margin: 0px;
+            text-align: center;
+            height: 60%;
+            padding-top: 10%;
+            padding-bottom: 17.7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0vh;
+            margin: 0;
+        }
+
+
+        footer {
+            height: 100px;
+            background-color: gray;
+            padding: 10px;
+            padding-bottom: 5px;
+            text-align: center;
+
+
+        }
+
+        .box {
+            width: 650px;
+            height: 200px;
+            font-size: 20px;
+            background-color:rgb(254, 254, 254);
+            color: rgb(2, 0, 0);
+            text-align: center;
+            padding: 50px;
+            cursor: pointer;
+            user-select: none;
+            touch-action: manipulation;
+            margin: 20px;
+            margin-top: 10%;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            box-shadow: 2px 2px 2px 2px rgba(74, 74, 74, 0.1);
+           
+
+        }
+
+        .box:hover{
+            transform: scale(1.1);
+           
+        }
+
+        .text {
+    
+            margin-top: 13%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\dhyan\Dropbox\FWS mini project\project logo.jpg" class="logo">
+
+        <nav>
+            <a href="fws mini project home page.html">Home</a>
+            <a href="2 page.html">Jobs</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <div class="box" onclick="navigateToPage('Online Jobs.html')">
+            <div class="text"><h3>ONLINE JOB</h3></div>
+        </div>
+        <div class="box" onclick="navigateToPage('Offline Job.html')">
+            <div class="text"><h3>OFFLINE JOB</h3></div>
+        </div>
+
+        <script>
+            function navigateToPage(pageUrl) {
+                window.location.href = pageUrl;
+            }
+        </script>
+    </section>
+    <footer>
+        <p>&copy; 2024 Job Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

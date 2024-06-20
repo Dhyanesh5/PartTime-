@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      margin-top: 5%;
+      background-color: #333333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateX(-100%);
+      animation: slideIn 1s forwards;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin: 10px 0;
+      padding: 8px;
+      border: 1px solid green;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <section>
+    <div class="contact-form">
+      <form>
+        <label for="name"></label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <label for="message"></label><br>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50" required></textarea>
+        <center> 
+          <button class="button"><a onclick="navigateToPage('submitted.html')">Click me!</a></button>
+          <script>
+            function navigateToPage(pageUrl) {
+              window.location.href = pageUrl;
+            }
+          </script>
+        </center>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
